@@ -27,6 +27,7 @@ header {
   height: 45px;
   margin-right: 1rem;
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 .settings-container {
@@ -107,6 +108,7 @@ button {
   margin: 10px 30px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 footer {
@@ -135,6 +137,7 @@ footer {
   }
   button {
     font-size: 5vh;
+    margin: 5px 20px;
   }
 }
 
