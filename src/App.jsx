@@ -17,7 +17,19 @@ const App = () => {
             background-color: ${darkMode ? "#111918" : "#eaeaea"};
             color: ${darkMode ? "#eaeaea" : "#111918"};
           }
+          input {
+            color: ${darkMode ? "#eaeaea" : "#111918"};
+          }
+          button {
+            color: ${darkMode ? "#eaeaea" : "#111918"};
+          }
+          button:disabled {
+            color: ${darkMode ? "#eaeaea6b" : "#1119186b"};
+          }
           .icon {
+            fill: ${darkMode ? "#eaeaea" : "#111918"};
+          }
+          .mode {
             fill: ${darkMode ? "#eaeaea" : "#111918"};
           }
           @media (max-width: 425px) {
