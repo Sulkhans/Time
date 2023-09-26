@@ -41,37 +41,46 @@ const DisplayTimer = () => {
     }
   }, [remainingTime]);
 
+  const handleKey = (event) => {
+    const key = event.key;
+    if (!(key >= "0" && key <= "9") && key !== "Backspace")
+      event.preventDefault();
+  };
+
   return (
     <main className="container">
       <div className="display">
         <div>
           <input
-            type="number"
             value={hr}
             name="hr"
-            onChange={handleChange}
             max={24}
             min={0}
+            maxLength={2}
+            onChange={handleChange}
+            onKeyDown={handleKey}
             disabled={remainingTime}
           />
           <span>:</span>
           <input
-            type="number"
             value={min}
             name="min"
-            onChange={handleChange}
             max={59}
             min={0}
+            maxLength={2}
+            onChange={handleChange}
+            onKeyDown={handleKey}
             disabled={remainingTime}
           />
           <span>:</span>
           <input
-            type="number"
             value={sec}
             name="sec"
-            onChange={handleChange}
             max={59}
             min={0}
+            maxLength={2}
+            onChange={handleChange}
+            onKeyDown={handleKey}
             disabled={remainingTime}
           />
         </div>

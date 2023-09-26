@@ -97,6 +97,7 @@ input {
 
 input:disabled {
   color: inherit;
+  -webkit-text-fill-color: inherit;
 }
 
 button {
@@ -106,6 +107,11 @@ button {
   margin: 10px 30px;
   border: none;
   background-color: transparent;
+  color: #111918;
+}
+
+button:disabled {
+  color: #1119186b;
 }
 
 footer {
